@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FIFA World Cup 2026 — Live Bracket</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1>🏆 FIFA World Cup 2026</h1>
+      <p class="subtitle">Knockout Bracket — Canada · Mexico · USA</p>
+    </div>
+    <div class="status-bar">
+      <span id="last-updated">Loading data…</span>
+      <button id="refresh-btn" title="Refresh now">⟳ Refresh</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="error-banner" class="hidden"></section>
+
+    <section class="bracket-wrap">
+      <div id="bracket" class="bracket">
+        <!-- Rounds are rendered by script.js -->
+      </div>
+    </section>
+
+    <section class="legend">
+      <span class="dot live"></span> Live
+      <span class="dot finished"></span> Finished
+      <span class="dot scheduled"></span> Scheduled / TBD
+    </section>
+  </main>
+
+  <footer>
+    Live data via <a href="https://www.thesportsdb.com/" target="_blank" rel="noopener">TheSportsDB</a>.
+    Auto-refreshes every 60 seconds.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
